@@ -19,11 +19,11 @@ Active Record
 5. What do Controllers generally inherit from in a rails project?<br />
 Application Controller
 6. How would I create a route if I wanted to see a specific horse in my routes fitle assuming I'm sticking to standard conventions and that I didn't want other CRUD functionality?<br />
-resources :horses, only: [:show]
+get 'horses/:id', to 'horses#show'
 7. What rake task is useful when looking at routes, and what information does it give you?<br />
 rake routes gives you all your availble routes, the prefix, the http verb, path information, controller action.
 8. What is an example of a route helper? When would you use them?<br />
-
+A route helper can create all crud functionality for an object with a single line of code.  You would use them as you build out your crud functionality.
 9. What's the difference between what `_url` and `_path` return when combined with a routes prefix?<br />
 _url will give a path that includes the domain name, and _path gives you a path relative to the project root.
 10. What are strong params and why are the necessary?<br />
