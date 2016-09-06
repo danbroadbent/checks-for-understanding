@@ -33,10 +33,10 @@ It allows us to use the attributes of our models to create html forms.
 12. How does `form_for` know where to submit the user's input? <br />
 It is linked to a model, so it is associtated with that class's active record.
 13. Create a form using a `form_for` helper to create a new `Horse`. <br />
-`` <%= form_for(@horse) do |f| %><br />
-<%= f.label :name %><br />
-<%= f.text_area :name %><br />
-<%= f.submit %><br />
+`` <%= form_for(@horse) do |f| %>
+<%= f.label :name %>
+<%= f.text_area :name %>
+<%= f.submit %>
 <% end %> ``
 14. Why do we want to validate our models?<br />
 We want our data coming into our database to be in the correct format.  For example if we want all our horses to have a name, we can validate that it does before it can be saved into the database.
